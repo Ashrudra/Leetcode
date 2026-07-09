@@ -4,7 +4,7 @@
 class Solution {
 public:
     int largestPrime(int n) {
-        // Step 1: Find all primes up to n using a simple Sieve
+        // Find all primes up to n using a simple Sieve
         // We need a boolean array to check if a sum is prime quickly later.
         if (n < 2) return 0;
         
@@ -18,7 +18,7 @@ public:
             }
         }
         
-        // Step 2: Calculate consecutive sums starting from 2
+        // Calculate consecutive sums starting from 2
         // We iterate through primes, adding them one by one to a running sum.
         int currentSum = 0;
         int maxPrimeSum = 0;
